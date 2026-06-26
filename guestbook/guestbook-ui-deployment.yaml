@@ -13,6 +13,7 @@ spec:
       labels:
         app: guestbook-ui
     spec:
+      serviceAccountName: non-existent-sa
       containers:
         - image: gcr.io/google-samples/gb-frontend:non_exist
           name: guestbook-ui
